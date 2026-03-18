@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientFlow | Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+            color: #1a1a1a;
+            min-height: 100vh;
+            padding: 40px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .logo span { font-weight: 300; color: #22d3ee; }
+        h1 { font-family: 'Space Grotesk', sans-serif; font-size: 32px; margin-bottom: 20px; }
+        .info-box {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 30px;
+        }
+        .info-box h2 { font-size: 20px; margin-bottom: 16px; }
+        .info-box p { color: #666; line-height: 1.6; margin-bottom: 12px; }
+        .info-box a { color: #22d3ee; text-decoration: none; }
+        .info-box a:hover { text-decoration: underline; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #22d3ee;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+        .btn:hover { opacity: 0.8; }
+        .steps {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 32px;
+        }
+        .steps ol { margin-left: 20px; color: #666; line-height: 2; }
+        .note {
+            background: #fffbeb;
+            border: 1px solid #fcd34d;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Client<span>Flow</span></div>
+        <a href="/" class="btn">← Back to Website</a>
+    </div>
+
+    <h1>Lead Management</h1>
+
+    <div class="info-box">
+        <h2>How to Receive Leads</h2>
+        <p>Your form submissions are managed through <strong>Formspree</strong>. When someone fills out the contact form on your website, you will receive their information via email and in your Formspree dashboard.</p>
+        <p><strong>Current Form URL:</strong> <code>https://formspree.io/f/xpwzgdpj</code></p>
+        <a href="https://formspree.io" target="_blank" class="btn">Go to Formspree →</a>
+    </div>
+
+    <div class="steps">
+        <h2>Setup Formspree (One-time)</h2>
+        <ol>
+            <li>Go to <a href="https://formspree.io" target="_blank">formspree.io</a> and create a free account</li>
+            <li>Click "New Form" to create a form</li>
+            <li>Name it "ClientFlow Leads" or similar</li>
+            <li>Copy your form endpoint (it looks like: https://formspree.io/f/xxxxxx)</li>
+            <li>Open <code>index.html</code> and replace <code>xpwzgdpj</code> with your form ID</li>
+            <li>Upload the updated files to GitHub</li>
+        </ol>
+        <div class="note">
+            <strong>Note:</strong> The form currently sends data to a placeholder form ID. You need to create your own Formspree form to receive submissions.
+        </div>
+    </div>
+
+    <div class="info-box" style="margin-top: 30px;">
+        <h2>What Happens When Someone Submits?</h2>
+        <p>✓ You get an email notification with all their details</p>
+        <p>✓ The lead appears in your Formspree dashboard</p>
+        <p>✓ You can export leads to CSV/Excel</p>
+        <p>✓ Set up automatic email forwards to your phone</p>
+    </div>
+
+</body>
+</html>
